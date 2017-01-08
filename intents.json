@@ -1,0 +1,12 @@
+{
+    "intents": [{
+        "intent": "QueryIntent",
+        "slots": [{
+            "name": "origin",
+            "type": "LIST_OF_LOCATIONS"
+        }, {
+            "name": "destination",
+            "type": "LIST_OF_LOCATIONS"
+        }]
+    }]
+}

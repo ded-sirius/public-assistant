@@ -29,6 +29,10 @@ def get_route(origin, destination):
     print directions
 
     instructions = directions.instructions
+
+    # Remove excess instruction: "Walk to [region]"
+    instructions = instructions[:len(instructions) - 1]
+
     print ". ".join(instructions)
 
     directions_msg = render_template('route', directions = ". ".join(instructions))

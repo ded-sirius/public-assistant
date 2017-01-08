@@ -1,0 +1,1 @@
+QueryIntent how do I get from {origin} to {destination}
