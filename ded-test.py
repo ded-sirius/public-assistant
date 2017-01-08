@@ -21,9 +21,6 @@ def new_session():
 def get_route(origin, destination):
     print '='*88
 
-    # origin = "walmart"
-    # destination = "sunset park"
-
     print Directions
     print ". ".join([origin, destination])
     directions = Directions(origin, destination)
@@ -32,7 +29,7 @@ def get_route(origin, destination):
     instructions = directions.instructions
     print ". ".join(instructions)
 
-    directions_msg = render_template('route', directions = "Hello. Hello.")
+    directions_msg = render_template('route', directions = ". ".join(instructions))
     return statement(directions_msg)
 
 if __name__ == '__main__':
