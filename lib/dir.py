@@ -26,7 +26,7 @@ class Directions:
                                              departure_time=now)
 
     def getInstructions(self):
-        print config
+        print "Self Directions Result: " 
         print self.directions_result
         steps = self.directions_result[0]['legs'][0]['steps']
         for step in steps:
