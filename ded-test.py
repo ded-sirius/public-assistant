@@ -21,9 +21,11 @@ def new_session():
 def get_route(origin, destination):
     print '='*88
 
+    region = ", las vegas"
+
     print Directions
-    print ". ".join([origin, destination])
-    directions = Directions(origin, destination)
+    print ". ".join([origin + region, destination + region])
+    directions = Directions(origin + region, destination + region)
     print directions
 
     instructions = directions.instructions
