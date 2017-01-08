@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from lib.directions import Directions
 
-origin = "6795 S Edmond St #110, Las Vegas, NV 89118"
+origin = "sunset park"
 destination = "UNLV"
 directions = Directions(origin, destination)
 
