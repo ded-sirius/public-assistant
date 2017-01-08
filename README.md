@@ -10,6 +10,7 @@ To use the app, first follow the instructions under *Execution*, followed by tho
 *Flask - pip install Flask
 *flask_ask - pip install flask-ask
 *Google Maps - pip install -U googlemaps 
+*ngrok
 
 ##Execution
 
