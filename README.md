@@ -2,6 +2,8 @@
 
 ##Setup
 
+some instruction
+
 create a copy of `config.example.py` as `config.py` and insert your Google API
 key.
 
