@@ -5,6 +5,12 @@ A speech-controlled app for public kiosks that gives directions to nearby facili
 
 To use the app, first follow the instructions under *Execution*, followed by those under *Creating the Alexa Skill*.
 
+##Setup (Make sure you have the following):
+*Pip - sudo easy_install pip
+*Flask - pip install Flask
+*flask_ask - pip install flask-ask
+*Google Maps - pip install -U googlemaps 
+
 ##Execution
 
 * Create a copy of `config.example.py` as `config.py` and insert your Google API
