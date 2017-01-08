@@ -1,0 +1,3 @@
+welcome: Where would you like to go?
+
+route: Hello. {{ directions }}
