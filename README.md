@@ -1,5 +1,5 @@
 #Public Assistant
-###featuring Amazon Alexa
+**featuring Amazon Alexa**
 
 A speech-controlled app for public kiosks that gives directions to nearby facilities and businesses.
 
