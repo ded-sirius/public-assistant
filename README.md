@@ -31,9 +31,9 @@ https://22183bb0.ngrok.io
 
 Example input:
 
-1.```
+1.``
 Alexa, start Dead Serious
-```
-2.```
+``
+2.``
 How do I get from Sunset Park to a homeless shelter?
-```
+``
