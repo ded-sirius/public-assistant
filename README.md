@@ -24,7 +24,7 @@ bin/ngrok http 5000
 ##Creating the Alexa Skill
 In the Amazon Developer's Console: 
 
-* Under Skill Information, set the Invocation Name to "dead serious"
+* Under Skill Information, set the Invocation Name to "wanago"
 * Under Interaction Model, copy the contents of intents.json into Intent Schema
 * Create a new custom slot type called LIST\_OF\_LOCATIONS and copy the contents of locations.txt into it
 * Copy the contents of samples.txt into Sample Utterances
@@ -39,7 +39,7 @@ https://22183bb0.ngrok.io
 Example input:
 
 1.``
-Alexa, start Dead Serious
+Alexa, start Wanago
 ``
 
 2.``
