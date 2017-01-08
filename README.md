@@ -6,11 +6,11 @@ A speech-controlled app for public kiosks that gives directions to nearby facili
 To use the app, first follow the instructions under *Execution*, followed by those under *Creating the Alexa Skill*.
 
 ##Setup (Make sure you have the following):
-* pip - sudo easy_install pip <br />
-* flask - pip install Flask <br />
-* flask_ask - pip install flask-ask <br />
-* google Maps - pip install -U googlemaps <br />
-* ngrok <br />
+* `pip` - sudo easy_install pip <br />
+* `flask` - pip install Flask <br />
+* `flask_ask` - pip install flask-ask <br />
+* google maps api - pip install -U googlemaps <br />
+* `ngrok`
 
 ##Execution
 
@@ -24,11 +24,11 @@ bin/ngrok http 5000
 ##Creating the Alexa Skill
 In the Amazon Developer's Console: 
 
-* Under Skill Information, set the Invocation Name to "wanago"
+* Under Skill Information, set the Invocation Name to "wannago"
 * Under Interaction Model, copy the contents of intents.json into Intent Schema
-* Create a new custom slot type called LIST\_OF\_LOCATIONS and copy the contents of locations.txt into it
+* Create a new custom slot type called `LIST\_OF\_LOCATIONS` and copy the contents of locations.txt into it
 * Copy the contents of samples.txt into Sample Utterances
-* Under Configuration, select HTTPS and copy the final output of ngrok into the text bar under the geographical regions. Example: 
+* Under Configuration, select HTTPS and copy the final output of ngrok into the text bar under the geographical regions. Example:
 ```
 https://22183bb0.ngrok.io
 ```
@@ -38,10 +38,5 @@ https://22183bb0.ngrok.io
 
 Example input:
 
-1.``
-Alexa, start Wanago
-``
-
-2.``
-How do I get to sunset park?
-``
+1. `Alexa, start Wanago`
+2. `How do I get to sunset park?`
