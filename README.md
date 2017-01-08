@@ -38,5 +38,5 @@ https://22183bb0.ngrok.io
 
 Example input:
 
-1. `Alexa, start Wanago`
-2. `How do I get to sunset park?`
+1. "Alexa, start Wanago"
+2. "How do I get to sunset park?"
