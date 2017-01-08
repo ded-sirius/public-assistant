@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-from lib.directions import Directions
+from lib.dir import Directions
 
-origin = "sunset park"
-destination = "UNLV"
+origin = "sunset park, las vegas"
+destination = "UNLV, las vegas"
 directions = Directions(origin, destination)
 
 for instruction in directions.instructions:

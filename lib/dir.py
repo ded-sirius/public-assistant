@@ -4,7 +4,7 @@ import googlemaps
 from datetime import datetime
 from config import GOOGLE_API_KEY
 
-MODE = 'walking'
+MODE = 'transit'
 
 class Directions:
     def __init__(self, origin, destination):
@@ -22,16 +22,16 @@ class Directions:
         now = datetime.now()
         self.directions_result = self.gmaps.directions(origin,
                                              destination,
-                                             mode="transit",
+                                             mode=MODE,
                                              departure_time=now)
 
     def getInstructions(self):
-        print "Self Directions Result: " 
-        print self.directions_result
         steps = self.directions_result[0]['legs'][0]['steps']
         for step in steps:
             instruction = cleanhtml(step['html_instructions'])
             self.instructions.append(instruction)
+            if 'Bus' in step['html_instructions']:
+                self.instructions.append("Get off on " + step['transit_details']['arrival_stop']['name'])
 
     def setDistance(self):
         self.distance = self.directions_result[0]['legs'][0]['distance']
