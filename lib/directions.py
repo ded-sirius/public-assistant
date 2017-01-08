@@ -9,11 +9,13 @@ MODE = 'walking'
 class Directions:
     def __init__(self, origin, destination):
         self.instructions = []
-        self.time = 0
-        self.distance = 0
+        self.duration = ''
+        self.distance = ''
         self.gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
         self.getDirections(origin, destination)
         self.getInstructions()
+        self.setDistance()
+        self.setTime()
 
     def getDirections(self, origin, destination):
         # Request directions via public transit
@@ -28,6 +30,13 @@ class Directions:
         for step in steps:
             instruction = cleanhtml(step['html_instructions'])
             self.instructions.append(instruction)
+
+    def setDistance(self):
+        self.distance = self.directions_result[0]['legs'][0]['distance']
+
+    def setTime(self):
+        self.duration = self.directions_result[0]['legs'][0]['duration']
+
 
 def cleanhtml(raw_html):
     cleanr = re.compile('<.*?>')
