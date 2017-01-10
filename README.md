@@ -9,7 +9,7 @@ To use the app, first follow the instructions under *Execution*, followed by tho
 * `pip` - sudo easy_install pip <br />
 * `flask` - pip install Flask <br />
 * `flask_ask` - pip install flask-ask <br />
-* google maps api - pip install -U googlemaps <br />
+* google maps api - `pip install -U googlemaps` <br />
 * `ngrok`
 
 ##Execution
